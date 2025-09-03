@@ -189,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://your-app.streamlit.app) 
+- [Live Demo](https://strchatapp.streamlit.app) 
 - [Google Gemini API](https://makersuite.google.com/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 - [LangChain Documentation](https://python.langchain.com/)
