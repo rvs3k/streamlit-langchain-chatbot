@@ -1203,7 +1203,7 @@ wheels = [
 ]
 
 [[package]]
-name = "streamlit-chatbot"
+name = "streamlit-langchain-chatbot"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -14,8 +14,8 @@ def configure_page():
         initial_sidebar_state="expanded",
     )
     st.title("⚡Streamlit x LangChain Chatbot")
-    with st.expander("Check State"):
-        st.write(st.session_state)
+    # with st.expander("Check State"):
+    #     st.write(st.session_state)
 
 
 def handle_sidebar():
